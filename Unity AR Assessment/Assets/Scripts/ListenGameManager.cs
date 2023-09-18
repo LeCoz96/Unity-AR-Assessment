@@ -41,6 +41,30 @@ public class ListenGameManager : MonoBehaviour
 
         yield return new WaitForSeconds(value);
 
-        _audioManager.PlayerEffect(_gameManager.GetCurrentNumber().CountingAudioClip);
+        StartCoroutine(Count(value));
     }
+
+    private IEnumerator Count(float value)
+    {
+        _audioManager.PlayerEffect(_gameManager.GetCurrentNumber().CountingAudioClip);
+
+        yield return new WaitForSeconds(_gameManager.GetCurrentNumber().CountingAudioClip.length);
+
+        yield return new WaitForSeconds(value);
+
+        StartCoroutine(WellDone(value));
+    }
+
+    private IEnumerator WellDone(float value)
+    {
+        _audioManager.PlayWellDone();
+
+        yield return new WaitForSeconds(_gameManager.GetCurrentNumber().CountingAudioClip.length);
+
+        yield return new WaitForSeconds(value);
+
+        
+    }
+
+
 }

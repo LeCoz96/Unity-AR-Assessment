@@ -15,3 +15,5 @@ MonoBehaviour:
   _listOfNumberSO:
   - {fileID: 11400000, guid: 16845f93e76780c47941e2e960810f9d, type: 2}
   - {fileID: 11400000, guid: 358c159ab861b104ea1d6d4af15b6bb9, type: 2}
+  - {fileID: 11400000, guid: 7123516e00925da409a6d7ee0e2deb16, type: 2}
+  _isFirstNumber: 1

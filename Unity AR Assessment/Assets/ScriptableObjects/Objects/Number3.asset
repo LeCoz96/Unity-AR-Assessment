@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Number3
   m_EditorClassIdentifier: 
   Number: 3
-  NumberAudioList: []
-  IntroductionClip: {fileID: 0}
+  IntroductionAudioClip: {fileID: 8300000, guid: 51414797161460f4191c0b8599c7981c,
+    type: 3}
+  CountingAudioClip: {fileID: 8300000, guid: 24ff258e19b6a084da22588b147a7b6e, type: 3}
